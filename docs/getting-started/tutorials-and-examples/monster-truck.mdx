@@ -35,10 +35,6 @@ vehicle:SetWheel(3, "Wheel_Rear_Right",  80, 60, 30, 20, 0.25, 2, 17, 1000, 0, 1
 -- Adds only a Passenger and Driver door/seat
 vehicle:SetDoor(0, Vector(50, -75, 105), Vector( 8, -32.5,  95), Rotator(0, 0, 10), 70, -150)
 vehicle:SetDoor(1, Vector(50,  75, 105), Vector(25,    50,  90), Rotator(0, 0,  0), 70,  150)
-
--- As we set AutoCreatePhysics = false on the constructor, we need to call this after configuring it (so if there is any player connected, he
--- doesn't need to recreate the physics for each function called - improving the performance)
-vehicle:RecreatePhysics()
 ```
 
 
